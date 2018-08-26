@@ -38,12 +38,13 @@
 
 <script>
     window.onload = function() {
+
+        $("li").removeClass("active");
+        $("#gallery").addClass("active");
+
         baguetteBox.run('.gallery', {
             buttons:true,
             filter:/.+/
         });
-        // baguetteBox.run('.baguetteBoxTwo', {
-        //     buttons:true
-        // });
     };
 </script>
